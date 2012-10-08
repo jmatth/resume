@@ -1,0 +1,84 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res} 
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document} 
+ 
+\name{Joshua Matthews\\[12pt]} % the \\[12pt] adds a blank line after name
+ 
+\address{{\bf Present Address } \\ 2112 LPO Way \\ Piscataway, NJ 08854  \\
+        phone : (732) 403 4073 }
+\address{{\bf Permanent Address} \\ 153 Riveredge Road \\ Tinton Falls, NJ 07724\\
+		email : jmatthews492@gmail.com \\ github : jmatth}
+
+\begin{resume} 
+ 
+\section{Education} 
+
+Rutgers University - School of Arts and Sciences \hfill New Brunswick, NJ\\
+B.S. in Computer Science \hfill Class of 2015
+
+\section{Experience}
+
+{\bf Student Systems Programmer} \hfill Rutgers Open Systems Solutions\\
+\textit{January 2012--Present} \hfill New Brunswick, NJ
+\begin{itemize} \itemsep -2pt %reduce space between items
+	\item Maintain and update software on university servers running CentOS and Solaris.
+	\item Web design and development for university websites.
+	\item Adapt open source software for use on Rutgers systems.
+	\item Contribute to open source projects such as Roundcube Webmail.
+\end{itemize}
+
+{\bf Developer Intern} \hfill Educational Resource Systems\\
+\textit{Winter 2010--Spring 2011} \hfill  Red Bank, NJ
+\begin{itemize} \itemsep -2pt %reduce space between items
+	\item Learned Object Oriented Programming with Adobe Action Script.
+	\item Built XML documents to control the flow of Adobe Flash programs.
+\end{itemize}
+
+%\section{Activities} 
+%{\bf Title,} Organization
+%\begin{itemize} \itemsep -2pt
+%	\item Items here
+%\end{itemize}
+
+\section{Projects} 
+
+	{\bf Trollnet}
+	\begin{itemize} \itemsep -2pt
+		\item Project utilizing a Raspberry Pi single board computer to set up a WiFi access point.
+		\item Traffic passing through the access point was intercepted and any image URLs were changed to point to a php script on an external server. This script would take the original images and insert random pictures from a pre-made set on top of them.
+		\item Utilized squid proxy software to intercept the data.
+		\item Won second place at HackNY Fall 2012.
+	\end{itemize}
+
+	{\bf Stereo Lasers}
+	\begin{itemize} \itemsep -2pt
+		\item Arduino project which projects visualization effects with two different colored lasers.
+		\item Visualiztion based on a random seed and audio input.
+		\item Won second place at HackRU.
+	\end{itemize}
+
+	{\bf Order ID}
+	\begin{itemize} \itemsep -2pt
+		\item Arduino project for ordering takeout by scanning an RFID chip.
+		\item The arduino board communicates with the main python program via a serial connection.
+		\item Utilizes the order.in API to place to order.
+		\item Won Best Hardware Hack at HackNY.
+	\end{itemize}
+
+\section{References}
+{\bf Jack Chen}\\
+System Administrator, Rutgers Open Systems Solutions\\
+jcc@rutgers.edu
+
+\end{resume} 
+\end{document} 
+
+
+
