@@ -3,11 +3,13 @@
 \documentclass[centered,overlapped]{res}
 % the margin option causes section titles to appear to the left of body text
 %\textwidth=5.2in % increase textwidth to get smaller right margin
-%\topmargin=-0.5in  % start text higher on the page
+% \topmargin=-0.25in  % start text higher on the page
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 % \usepackage[none]{hyphenat}  % disable automatic hyphenation
 \usepackage{newcent}   % uses new century schoolbook postscript font
-\setlength{\textheight}{9.5in}
+\voffset=-0.25in
+\setlength{\textheight}{11in}
+\hoffset=0.0in
 
 \begin{document}
 
@@ -25,11 +27,24 @@
 Rutgers University - School of Arts and Sciences \hfill New Brunswick, NJ\\
 B.S. in Computer Science \hfill Class of 2015 \\
 \begin{tabular}{l l}
-	CS GPA: & 3.33 \\
-	Overall GPA: & 3.07 \\
+	CS GPA: & 3.59 \\
+	Overall GPA: & 3.28 \\
 \end{tabular}
 
 \section{Experience}
+
+{\bf Engineering Intern} \hfill Twilio\\
+\textit{May 2014--August 2014} \hfill San Francisco, CA
+\begin{itemize} \itemsep -2pt %reduce space between items
+    \item Augmented the internal build tools to run builds in isolated
+      environments, allowing for increased build throughput and eliminating
+      multi-tenancy issues.
+    \item Began development of a new tool to manage the internal rpm
+      repositories when upstream tools proved to be a bottleneck in the
+      development process.
+    \item Migrated several key services from a home-grown legacy configuration
+        system to rpms and Chef.
+\end{itemize}
 
 {\bf HackNY Engineering Intern} \hfill Bitly\\
 \textit{June 2013--August 2013} \hfill New York, NY
@@ -50,13 +65,6 @@ B.S. in Computer Science \hfill Class of 2015 \\
 	\item Assess, diagnose, and resolve system and application issues.
 \end{itemize}
 
-{\bf Developer Intern} \hfill Educational Resource Systems\\
-\textit{Winter 2010--Spring 2011} \hfill  Red Bank, NJ
-\begin{itemize} \itemsep -2pt %reduce space between items
-	\item Modified existing flash movies to assist doctors with learning about pharmaceutical products.
-	\item Built XML documents to control the flow of Adobe Flash programs and provide an on-demand glossary.
-\end{itemize}
-
 %\section{Activities}
 %{\bf Title,} Organization
 %\begin{itemize} \itemsep -2pt
@@ -64,6 +72,16 @@ B.S. in Computer Science \hfill Class of 2015 \\
 %\end{itemize}
 
 \section{Projects}
+
+	{\bf ShellGolf}
+	\begin{itemize} \itemsep -2pt
+        \item Webapp that would ask users to solve challenges using the UNIX
+            shell, and rank solutions based on conciseness.
+        \item Solutions submitted by users were tested inside of Docker
+            containers to guard against malicious code.
+        \item Initially written at MHacks Fall 2013, currently undergoing a
+            rewrite to incorporate recent changes to the Docker API.
+	\end{itemize}
 
 	{\bf Facebook File System}
 	\begin{itemize} \itemsep -2pt
@@ -82,18 +100,10 @@ B.S. in Computer Science \hfill Class of 2015 \\
 		\item Won second place at HackNY Fall 2012.
 	\end{itemize}
 
-	{\bf Stereo Lasers}
-	\begin{itemize} \itemsep -2pt
-		\item Arduino project which projects visualization effects with two different colored lasers.
-		\item Visualization based on a random seed and audio input.
-		\item Won second place at HackRU Spring 2012.
-	\end{itemize}
-
 \section{Skills}
 	\begin{tabular}{l l}
 		\noindent \textbf{Programming Languages:} & Python, Ruby, Javascript, PHP, shell scripting, Java, C \\
 		\noindent \textbf{Version Control:} & Git, Subversion \\
-		% \noindent \textbf{Operating Systems:} & Linux, UNIX, Solaris, Microsoft Windows, Mac OS X \\
 	\end{tabular}
 
 \end{resume}
