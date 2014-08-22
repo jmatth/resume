@@ -71,34 +71,43 @@ Major GPA: 3.59 \hfill Overall GPA: 3.28
 %	\item Items here
 %\end{itemize}
 
+
 \section{Projects}
 
 	{\bf ShellGolf}
-	\begin{itemize} \itemsep -2pt
-        \item Webapp that would ask users to solve challenges using the UNIX
-            shell, and rank solutions based on conciseness.
-        \item Solutions submitted by users were tested inside of Docker
-            containers to guard against malicious code.
-        \item Initially written at MHacks Fall 2013, currently undergoing a
-            rewrite to incorporate recent changes to the Docker API.
-	\end{itemize}
+  \begin{itemize} \itemsep -2pt %reduce space between items
+    \item Presents users with challenges to be solved with shell scripting, and
+      scores the solutions based on conciseness.
+    \item Submitted code is run inside Docker containers for isolation.
+    \item Node.js, MongoDB, Docker, RabbitMQ
+  \end{itemize}
 
 	{\bf Facebook File System}
-	\begin{itemize} \itemsep -2pt
-		\item Modeled the Facebook Graph API as a UNIX directory structure,
-            allowing Facebook interaction through basic command line tools.
-        \item Won third place at Facebook Summer of Hack 2013, NY.
-	\end{itemize}
+  \begin{itemize} \itemsep -2pt %reduce space between items
+    \item Models parts of the Facebook Graph API as a UNIX directory structure,
+      allowing Facebook interaction through basic command line tools.
+    \item Won third place at Facebook Summer of Hack 2013, NY.
+    \item C, FUSE
+  \end{itemize}
 
-	{\bf Trollnet}
-	\begin{itemize} \itemsep -2pt
-		\item Utilized a Raspberry Pi to set up a WiFi access point.
-		\item Traffic that passed through the access point was intercepted and
-            any image URLs were changed to point to a PHP script which would
-            overlay random pictures on top of the originals.
-		\item Utilized squid proxy software to intercept the data.
-		\item Won second place at HackNY Fall 2012.
-	\end{itemize}
+  {\bf EzPrompt.net}
+  \begin{itemize} \itemsep -2pt %reduce space between items
+    \item Allows users to easily generate customized prompts for GNU Bash via a
+      web interface.
+    \item Presents preview of the prompt on back or white backrounds, and the
+      generated code for the user to place in their config file.
+    \item Javascript, jQuery UI
+  \end{itemize}
+
+  {\bf LinkTheDots}
+  \begin{itemize} \itemsep -2pt %reduce space between items
+    \item Shell script for linking configuration files from a git repository
+      into a users home directory.
+    \item Includes support symlinking or copying, extending with custom
+      scripts, submodule support, and automatic updates when the repository is
+      updated.
+    \item Written completely in GNU Bash for maximum compatibility.
+  \end{itemize}
 
 
 \section{Languages and Technologies}
