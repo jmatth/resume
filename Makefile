@@ -1,5 +1,7 @@
 .PHONY: clean
 
+all: resume org
+
 resume: res.cls resume.tex
 	pdflatex resume.tex
 
