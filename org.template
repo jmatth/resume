@@ -1,0 +1,30 @@
+$if(title)$
+#+TITLE: $title$
+
+$endif$
+$if(author)$
+*** $for(author)$$author$$sep$; $endfor$
+$endif$
+$if(address)$
+$for(address)$
+
+$address$
+$endfor$
+$endif$
+$if(date)$
+#+DATE: $date$
+
+$endif$
+$for(header-includes)$
+$header-includes$
+
+$endfor$
+$for(include-before)$
+$include-before$
+
+$endfor$
+$body$
+$for(include-after)$
+
+$include-after$
+$endfor$
