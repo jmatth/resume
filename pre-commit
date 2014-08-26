@@ -3,5 +3,5 @@
 set -e
 
 make
-git add README.org
+git add README.*
 make clean

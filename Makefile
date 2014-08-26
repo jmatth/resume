@@ -1,12 +1,14 @@
 .PHONY: clean
 
-all: resume org
+all: resume asciidoc
 
 resume: res.cls resume.tex
 	pdflatex resume.tex
 
-org: resume.tex org.template
-	pandoc -s resume.tex -o README.org --template org.template
+asciidoc: resume.tex asciidoc.template
+	sed 's/[[:space:]]\\hfill[[:space:]]/; /g' resume.tex > resume.tmp.tex
+	pandoc -s resume.tmp.tex -o README.asciidoc --template asciidoc.template
+	rm resume.tmp.tex
 
 hook:
 	cp pre-commit .git/hooks/pre-commit
